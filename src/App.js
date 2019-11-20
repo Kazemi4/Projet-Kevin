@@ -3,7 +3,7 @@ import Home from './screen/Home'
 import Characters from './screen/Characters';
 import Header from './components/Header';
 
-import { Switch,Route,} from "react-router-dom";
+import { Switch, Route} from "react-router-dom";
 
 
 import './App.css';
