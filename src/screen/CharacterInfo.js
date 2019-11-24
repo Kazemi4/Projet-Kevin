@@ -26,7 +26,11 @@ componentDidMount(){
         const info = this.state.info
         return (
             <div>
-                {info.name}
+
+                <img className="characterInfo-img" src={info.image} alt={info.name}/>
+                <p className="characterInfo-info">Role : {info.name}</p>
+                <p className="characterInfo-info">Actor : {info.actor}</p>
+
             </div>
         )
     }

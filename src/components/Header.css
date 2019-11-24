@@ -1,5 +1,7 @@
+
+
     .header-header {
-    background: url('../assets/images/poudlard.jpg');
+    background: url('https://usercontent1.hubstatic.com/12590458.png');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: fixed;
@@ -8,13 +10,30 @@
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
-    color: white;
-    height: 80vh;
-    
+    height: 100vh;
+    font-family: 'Calistoga', cursive;
+    font-size: 3vw;
   }
-  
+
   .header-link {
-    color: #09d3ac;
+    display: flex;
+    justify-content: flex-start;
+    color: white;
     text-decoration: none;
   }
   
+  #header-characters-title {
+    color : #410f0d;
+  }
+
+   #header-characters-title:hover {
+    color : #6c2e30;
+  }
+
+  #header-home-title {
+    color: #08342b;
+  }
+
+   #header-home-title:hover {
+    color: #0d5244;
+  }

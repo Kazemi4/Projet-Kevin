@@ -1,0 +1,15 @@
+.home-home {
+    font-family: 'Calistoga', cursive;
+    display: flex;
+    justify-content: space-between;
+}
+.home-house {
+    list-style: none;
+    text-decoration: none;
+    color: rgb(246, 202, 3);
+    font-size: 4vh;
+}
+
+.home-house:hover {
+    color : grey;
+}
