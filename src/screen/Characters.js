@@ -15,6 +15,7 @@ class Characters extends React.Component {
     fetchCharacters = () => {
         axios.get('https://harrypotterapi20.herokuapp.com/characters')
             .then(res => res.data)
+            //On va changer la state donc nécessite un this.setState({})
             .then(data => this.setState({
                 characters : data
             })
