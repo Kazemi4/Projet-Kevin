@@ -4,6 +4,7 @@ import Characters from './screen/Characters';
 import Header from './components/Header';
 import CharacterInfo from './components/CharacterInfo'
 import HouseCharacter from './screen/HouseCharacter'
+import Staff from './screen/Staff'
 
 import { Switch,Route,} from "react-router-dom";
 
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/characters" component={Characters} /> 
         <Route path="/character/:id" component={CharacterInfo} />
         <Route path="/house/:house" component={HouseCharacter} />
+        <Route path="/staff" component={Staff} />
       </Switch>
 
       {/* <Home /> */}

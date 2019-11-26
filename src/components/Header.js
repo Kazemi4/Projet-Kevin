@@ -1,20 +1,25 @@
 import React from 'react'
-import logo from "../assets/images/logo.svg"
+import logo from "../assets/images/harry-potter-logo.png"
 import { Link } from "react-router-dom";
 
 import "./Header.css"
 
 const Header = () => {
     return (
-            <header className="header-header">
+        <>
+        <header className="header-header">
         <img src={logo} className="header-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+        <p className="bienvenue">
+          Bienvenue sur le site 9 3/4 d'Harry Potter !
         </p>
-
-        <Link  className="header-link" to="/"> Home </Link>
-        <Link  className="header-link" to="/characters">Characters </Link>
-      </header>
+        <nav className="menu">
+        <Link  className="header-link1" to="/"> Home </Link>
+        <Link  className="header-link2" to="/characters">Characters </Link>
+        <Link  className="header-link" to="/staff">Staff</Link>
+        </nav>
+        </header>
+        </>
+      
     )
 }
 
