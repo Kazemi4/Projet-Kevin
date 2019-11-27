@@ -5,15 +5,15 @@ import CharacterCard from '../components/CharacterCard'
 
  class HouseCharacter extends Component {
   state = {
-    characters: []
+    characters: [],
+    houses: ' '
   }
 
   fetchCharacterByHouse = () => {
     const house = this.props.match.params.house
-
     axios.get(`https://harrypotterapi20.herokuapp.com/characters/houses/${house}`)
           .then(res => res.data)
-          .then(data => this.setState({ characters: data }))
+          .then(data => this.setState({ characters: data, houses: house}))
   }                         //setState alimente la donnée, il ne la modifie pas
 
   componentDidMount() {
@@ -24,7 +24,8 @@ import CharacterCard from '../components/CharacterCard'
     return (
       <div>
         {this.state.characters.map(houseCharacter => {
-          return <CharacterCard characterData={houseCharacter} />
+          return <CharacterCard characterData={houseCharacter} houses= {this.state.houses}/>
+          
         })}
       </div>
     )
